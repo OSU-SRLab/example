@@ -1,6 +1,8 @@
 from os import path
 import sys
 
+# This is a single-line comment. 
+
 class InputFile:
     """ This class acts a container for input files. """
     
