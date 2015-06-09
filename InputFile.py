@@ -83,25 +83,3 @@ class InputFile:
         self.read = m[3][1:]
         self.set_number = m[4]
 
-
-""" 
-Defines highlight color (green) and regular color in variables.
-"""
-highlight = '\033[92m'
-end_highlight = '\033[0m'
-
-filename = 'OSU13053-0000059-0180528-N-IDTTCGA-20150219-M01211_S1_L001_R1_001.fastq'
-
-print('Splitting ' + highlight + str(filename) + end_highlight + 
-    ' into parameters...')
-
-f = InputFile(filename)
-
-"""
-Print out study, patient, sample, sample type, and read #.
-"""
-print('Study: ' + highlight + f.study + end_highlight)
-print('Patient: ' + highlight + f.patient + end_highlight)
-print('Sample: ' + highlight + f.sampleid + end_highlight)
-print('Sample Type: ' + highlight + f.sample_type + end_highlight)
-print('Read: ' + highlight + f.read + end_highlight)
