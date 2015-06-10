@@ -16,7 +16,7 @@ for n in range(1,5):
 
 	output = "".join(chars)
 
-	filename = 'OSU12345-1000000-000000' + str(n) + '-N-EXAMPLE-20150610-M01234_S1_L001_R' + str(randrange(1,3)) + '_001.fastq'
+	filename = 'OSU12345-1000000-000000' + str(n) + '-N-EXAMPLE-20150610-M01234_S1_L001_R0_001.fastq'
 	
 	f = open('files/' + filename, 'w')
 	f.write(output)
